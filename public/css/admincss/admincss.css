@@ -1,0 +1,196 @@
+:root{
+    --box-shadow: 0px 7px 30px -20px;
+    --color:black;
+    --margin-top:20px;
+}
+body{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.admin-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+.admin-sidebar{
+    flex-basis: 20%;
+}
+.admin-rightcontainer{
+    flex-basis: 70%;
+}
+.adminul{
+    box-shadow: 0px 7px 30px -20px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+.adminul li{
+    list-style: none;
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+.adminul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.adminul li:hover{
+    box-shadow: 0px 7px 30px -20px;
+    background-color: #E4E5E9;
+    border-radius: 6px;
+}
+.admin-rightcontainer{
+}
+.admintopbar{
+    box-shadow: var(--box-shadow) !important;
+    width: 100%;
+  padding: 8px 5px;
+  margin: 0px auto;
+}
+.admin-topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin-topbar button{
+    cursor: pointer;
+    border: none;
+}
+.admin-topbar button .fa-bars{
+    font-size: 30px;
+
+}
+.admin-topbar h1{
+    color: var(--color);
+    font-size: 14px;
+}
+.admin-content-holder{
+    display: flex;
+    flex-direction: column;
+}
+.usersnumberdiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-top: 50px;
+}
+
+.usersnumberdiv .usersdiv{
+    padding: 5px;
+    height: 230px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+}
+.usersdiv img{
+    height: 200px;
+    width: 100%;
+}
+
+.dusernum{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+}
+.dusernum button{
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* secondgraph */
+.secondgraph{
+   width: 100%;
+   box-shadow: var(--box-shadow);
+   margin-top: 50px;
+}
+.secondgraph img{
+    width: 100%;
+
+}
+
+.formdivs{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.formdivs form{
+    display: flex;
+    align-items: center;
+    background-color: darkgray;
+    width: max-content;
+    justify-content: center;
+    margin: 0px auto;
+}
+.formdivs form input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.formdivs form button{
+    background-color: transparent;
+    border: none;
+    padding: 8px 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+.category-content{
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    height: 100vh;
+    margin-top: 20px;
+    padding: 10px 5px;
+
+}
+.categorydata{
+    display: flex;
+    justify-content: space-around;
+
+}
+.categoryname{
+    flex-basis: 50%;
+}
+.categiryupdate{
+    flex-basis: 20%;
+}
+.categorydata .categoryname h1{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.formnewsdivs form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 18px;
+    column-gap: 10px;
+    margin-top: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.formnewsdivs form input, select,textarea, .postbtn{
+    width: 90%;
+    border: 0;
+    outline: 0;
+    margin-top: 15px;
+    padding: 10px 10px;
+    background-color: #E4E5E9;
+
+}
